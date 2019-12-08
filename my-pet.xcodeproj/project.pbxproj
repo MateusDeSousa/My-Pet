@@ -26,7 +26,7 @@
 /* Begin PBXFileReference section */
 		43938BD2B54649D3733AF7A7 /* Pods-my-pet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-my-pet.release.xcconfig"; path = "Target Support Files/Pods-my-pet/Pods-my-pet.release.xcconfig"; sourceTree = "<group>"; };
 		4A37C95E67C75B4014DAED69 /* Pods-my-pet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-my-pet.debug.xcconfig"; path = "Target Support Files/Pods-my-pet/Pods-my-pet.debug.xcconfig"; sourceTree = "<group>"; };
-		852C0F4E2397486700876B65 /* my-pet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "my-pet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		852C0F4E2397486700876B65 /* My Pet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Pet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		852C0F512397486700876B65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		852C0F532397486700876B65 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		852C0F552397486700876B65 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -69,7 +69,7 @@
 		852C0F4F2397486700876B65 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				852C0F4E2397486700876B65 /* my-pet.app */,
+				852C0F4E2397486700876B65 /* My Pet.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -180,7 +180,7 @@
 			);
 			name = "my-pet";
 			productName = "my-pet";
-			productReference = 852C0F4E2397486700876B65 /* my-pet.app */;
+			productReference = 852C0F4E2397486700876B65 /* My Pet.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -448,7 +448,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mateusdesousa.mypet;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "My Pet";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -468,7 +468,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mateusdesousa.mypet;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "My Pet";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
