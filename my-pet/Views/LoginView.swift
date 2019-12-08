@@ -29,9 +29,14 @@ class LoginView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         addComponents()
+        addElementsInForm()
         setConstraints()
-        
-        
+    }
+    
+    private func setDefaultsElements(){
+        iconApp.image = UIImage(named: "")
+        nameApp.text = "MyPet"
+        nameApp.font = .boldSystemFont(ofSize: 23)
     }
     
     private func addComponents() {
