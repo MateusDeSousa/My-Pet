@@ -19,13 +19,14 @@
 		852C0F742398A17C00876B65 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852C0F732398A17C00876B65 /* FirebaseService.swift */; };
 		852C0F762398A1E700876B65 /* PetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852C0F752398A1E700876B65 /* PetModel.swift */; };
 		852C0F782398A23700876B65 /* OwnerPetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852C0F772398A23700876B65 /* OwnerPetModel.swift */; };
+		858C4E92239D6B0200E7CCF1 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858C4E91239D6B0200E7CCF1 /* UIViewExtension.swift */; };
 		AE3B8D506463D4D25D142394 /* Pods_my_pet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CAF47B271559BFCCF5965DA /* Pods_my_pet.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		43938BD2B54649D3733AF7A7 /* Pods-my-pet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-my-pet.release.xcconfig"; path = "Target Support Files/Pods-my-pet/Pods-my-pet.release.xcconfig"; sourceTree = "<group>"; };
 		4A37C95E67C75B4014DAED69 /* Pods-my-pet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-my-pet.debug.xcconfig"; path = "Target Support Files/Pods-my-pet/Pods-my-pet.debug.xcconfig"; sourceTree = "<group>"; };
-		852C0F4E2397486700876B65 /* my-pet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "my-pet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		852C0F4E2397486700876B65 /* My Pet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Pet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		852C0F512397486700876B65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		852C0F532397486700876B65 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		852C0F552397486700876B65 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -39,6 +40,7 @@
 		852C0F732398A17C00876B65 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
 		852C0F752398A1E700876B65 /* PetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetModel.swift; sourceTree = "<group>"; };
 		852C0F772398A23700876B65 /* OwnerPetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerPetModel.swift; sourceTree = "<group>"; };
+		858C4E91239D6B0200E7CCF1 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		9CAF47B271559BFCCF5965DA /* Pods_my_pet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_my_pet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -67,7 +69,7 @@
 		852C0F4F2397486700876B65 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				852C0F4E2397486700876B65 /* my-pet.app */,
+				852C0F4E2397486700876B65 /* My Pet.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,6 +77,7 @@
 		852C0F502397486700876B65 /* my-pet */ = {
 			isa = PBXGroup;
 			children = (
+				858C4E90239D6AD300E7CCF1 /* Extensions */,
 				852C0F6A23974E5400876B65 /* Models */,
 				852C0F6823974E3600876B65 /* Views */,
 				852C0F6723974E2E00876B65 /* Services */,
@@ -132,6 +135,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		858C4E90239D6AD300E7CCF1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				858C4E91239D6B0200E7CCF1 /* UIViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		AF55518187685BE42ECF99ED /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,7 +180,7 @@
 			);
 			name = "my-pet";
 			productName = "my-pet";
-			productReference = 852C0F4E2397486700876B65 /* my-pet.app */;
+			productReference = 852C0F4E2397486700876B65 /* My Pet.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -283,6 +294,7 @@
 			files = (
 				852C0F722398A12900876B65 /* HistoryView.swift in Sources */,
 				852C0F562397486700876B65 /* LoginView.swift in Sources */,
+				858C4E92239D6B0200E7CCF1 /* UIViewExtension.swift in Sources */,
 				852C0F742398A17C00876B65 /* FirebaseService.swift in Sources */,
 				852C0F6C2398A06400876B65 /* RegisterView.swift in Sources */,
 				852C0F702398A10900876B65 /* MyPetsView.swift in Sources */,
@@ -436,7 +448,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mateusdesousa.mypet;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "My Pet";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -456,7 +468,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mateusdesousa.mypet;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "My Pet";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
