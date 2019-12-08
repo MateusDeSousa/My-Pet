@@ -28,15 +28,48 @@ class LoginView: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setDefaultsElements()
         addComponents()
-        addElementsInForm()
         setConstraints()
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        view.layoutSubviews()
+        viewForm.layoutSubviews()
+        viewForm.roundCorners(radius: 20)
+        signInButton.roundCorners()
+//        viewForm.dropShadow(color: .black, opacity: 0.2, offSet: CGSize(width: -1, height: 1), radius: 10, scale: true)
+    }
+    
     private func setDefaultsElements(){
-        iconApp.image = UIImage(named: "")
+        self.view.backgroundColor = .white
+        
+        iconApp.image = UIImage(named: "pawprint")?.withRenderingMode(.alwaysTemplate)
+        iconApp.tintColor = .orange
         nameApp.text = "MyPet"
         nameApp.font = .boldSystemFont(ofSize: 23)
+        imageHeader.image = UIImage(named: "man_petting_dog")
+        imageHeader.contentMode = .scaleAspectFit
+        imageFooter.contentMode = .scaleAspectFit
+        imageFooter.image = UIImage(named: "image-city")
+        
+        viewForm.backgroundColor = .white
+        typeForm.text = "Login"
+        fieldEmail.placeholder = "Email"
+        fieldPassword.placeholder = "Senha"
+        sublimeFieldEmail.backgroundColor = .black
+        sublimeFieldPassword.backgroundColor = .black
+        forgotPasswordButton.backgroundColor = .clear
+        forgotPasswordButton.setTitle("Esqueceu a senha?", for: .normal)
+        forgotPasswordButton.setTitleColor(.blue, for: .normal)
+        
+        signInButton.setTitle("Entrar", for: .normal)
+        signInButton.setTitleColor(.white, for: .normal)
+        signInButton.backgroundColor = .orange
+        registeUserButton.setTitleColor(.blue, for: .normal)
+        registeUserButton.setTitle("Cadastre-se aqui", for: .normal)
+        registeUserButton.backgroundColor = .clear
     }
     
     private func addComponents() {
@@ -74,11 +107,12 @@ class LoginView: UIViewController {
         registeUserButton.translatesAutoresizingMaskIntoConstraints = false
         
         let widthDevice = UIScreen.main.bounds.width
+        let widthDevice60Per100 = widthDevice * 0.6
         NSLayoutConstraint.activate([
-            imageHeader.widthAnchor.constraint(equalToConstant: widthDevice),
-            imageHeader.heightAnchor.constraint(equalToConstant: widthDevice),
+            imageHeader.widthAnchor.constraint(equalToConstant: widthDevice60Per100),
+            imageHeader.heightAnchor.constraint(equalToConstant: widthDevice60Per100),
             imageHeader.topAnchor.constraint(equalTo: self.topLayoutGuide.bottomAnchor, constant: 0),
-            imageHeader.centerXAnchor.constraint(equalTo: self.view.centerXAnchor, constant: 0),
+            imageHeader.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -10),
             
             imageFooter.widthAnchor.constraint(equalToConstant: widthDevice),
             imageFooter.heightAnchor.constraint(equalToConstant: widthDevice),
@@ -87,12 +121,25 @@ class LoginView: UIViewController {
             
             iconApp.widthAnchor.constraint(equalToConstant: 40),
             iconApp.heightAnchor.constraint(equalToConstant: 40),
+            iconApp.topAnchor.constraint(equalTo: self.topLayoutGuide.bottomAnchor, constant: 30),
+            iconApp.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 20),
             
             nameApp.leadingAnchor.constraint(equalTo: iconApp.trailingAnchor, constant: 5),
             nameApp.centerYAnchor.constraint(equalTo: iconApp.centerYAnchor, constant: 0),
             
+            viewForm.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 20),
+            viewForm.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -20),
+            viewForm.centerYAnchor.constraint(equalTo: self.view.centerYAnchor, constant: -30),
             
+            signInButton.heightAnchor.constraint(equalToConstant: 50),
+            signInButton.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 70),
+            signInButton.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -70),
+            signInButton.topAnchor.constraint(equalTo: viewForm.bottomAnchor, constant: 30),
             
+            registeUserButton.heightAnchor.constraint(equalToConstant: 30),
+            registeUserButton.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 55),
+            registeUserButton.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -55),
+            registeUserButton.topAnchor.constraint(equalTo: signInButton.bottomAnchor, constant: 30),
         ])
     }
     
@@ -113,7 +160,7 @@ class LoginView: UIViewController {
             fieldEmail.heightAnchor.constraint(equalToConstant: 40),
             
             fieldPassword.leadingAnchor.constraint(equalTo: viewForm.leadingAnchor, constant: 10),
-            fieldPassword.topAnchor.constraint(equalTo: fieldEmail.topAnchor, constant: 20),
+            fieldPassword.topAnchor.constraint(equalTo: fieldEmail.bottomAnchor, constant: 20),
             fieldPassword.trailingAnchor.constraint(equalTo: viewForm.trailingAnchor, constant: -10),
             fieldPassword.heightAnchor.constraint(equalToConstant: 40),
             
@@ -126,6 +173,7 @@ class LoginView: UIViewController {
             sublimeFieldPassword.topAnchor.constraint(equalTo: fieldPassword.bottomAnchor, constant: 0),
             sublimeFieldPassword.trailingAnchor.constraint(equalTo: fieldPassword.trailingAnchor, constant: -10),
             sublimeFieldPassword.heightAnchor.constraint(equalToConstant: 1),
+            sublimeFieldPassword.bottomAnchor.constraint(equalTo: viewForm.bottomAnchor, constant: -60),
             
             forgotPasswordButton.trailingAnchor.constraint(equalTo: viewForm.trailingAnchor, constant: -10),
             forgotPasswordButton.bottomAnchor.constraint(equalTo: viewForm.bottomAnchor, constant: -10)

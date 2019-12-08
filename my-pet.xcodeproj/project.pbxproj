@@ -19,6 +19,7 @@
 		852C0F742398A17C00876B65 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852C0F732398A17C00876B65 /* FirebaseService.swift */; };
 		852C0F762398A1E700876B65 /* PetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852C0F752398A1E700876B65 /* PetModel.swift */; };
 		852C0F782398A23700876B65 /* OwnerPetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852C0F772398A23700876B65 /* OwnerPetModel.swift */; };
+		858C4E92239D6B0200E7CCF1 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858C4E91239D6B0200E7CCF1 /* UIViewExtension.swift */; };
 		AE3B8D506463D4D25D142394 /* Pods_my_pet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CAF47B271559BFCCF5965DA /* Pods_my_pet.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		852C0F732398A17C00876B65 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
 		852C0F752398A1E700876B65 /* PetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetModel.swift; sourceTree = "<group>"; };
 		852C0F772398A23700876B65 /* OwnerPetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerPetModel.swift; sourceTree = "<group>"; };
+		858C4E91239D6B0200E7CCF1 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		9CAF47B271559BFCCF5965DA /* Pods_my_pet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_my_pet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -75,6 +77,7 @@
 		852C0F502397486700876B65 /* my-pet */ = {
 			isa = PBXGroup;
 			children = (
+				858C4E90239D6AD300E7CCF1 /* Extensions */,
 				852C0F6A23974E5400876B65 /* Models */,
 				852C0F6823974E3600876B65 /* Views */,
 				852C0F6723974E2E00876B65 /* Services */,
@@ -130,6 +133,14 @@
 				852C0F772398A23700876B65 /* OwnerPetModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		858C4E90239D6AD300E7CCF1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				858C4E91239D6B0200E7CCF1 /* UIViewExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		AF55518187685BE42ECF99ED /* Pods */ = {
@@ -283,6 +294,7 @@
 			files = (
 				852C0F722398A12900876B65 /* HistoryView.swift in Sources */,
 				852C0F562397486700876B65 /* LoginView.swift in Sources */,
+				858C4E92239D6B0200E7CCF1 /* UIViewExtension.swift in Sources */,
 				852C0F742398A17C00876B65 /* FirebaseService.swift in Sources */,
 				852C0F6C2398A06400876B65 /* RegisterView.swift in Sources */,
 				852C0F702398A10900876B65 /* MyPetsView.swift in Sources */,
