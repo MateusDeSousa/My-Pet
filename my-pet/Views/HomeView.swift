@@ -6,4 +6,8 @@
 //  Copyright © 2019 Mateus Sousa. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class HomeView: UIViewController {
+    
+}
