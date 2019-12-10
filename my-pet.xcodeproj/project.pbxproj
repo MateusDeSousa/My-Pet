@@ -20,6 +20,7 @@
 		852C0F762398A1E700876B65 /* PetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852C0F752398A1E700876B65 /* PetModel.swift */; };
 		852C0F782398A23700876B65 /* OwnerPetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852C0F772398A23700876B65 /* OwnerPetModel.swift */; };
 		858C4E92239D6B0200E7CCF1 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858C4E91239D6B0200E7CCF1 /* UIViewExtension.swift */; };
+		858C4E95239F2DA300E7CCF1 /* IconHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858C4E94239F2DA300E7CCF1 /* IconHomeView.swift */; };
 		AE3B8D506463D4D25D142394 /* Pods_my_pet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CAF47B271559BFCCF5965DA /* Pods_my_pet.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		852C0F752398A1E700876B65 /* PetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetModel.swift; sourceTree = "<group>"; };
 		852C0F772398A23700876B65 /* OwnerPetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerPetModel.swift; sourceTree = "<group>"; };
 		858C4E91239D6B0200E7CCF1 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		858C4E94239F2DA300E7CCF1 /* IconHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconHomeView.swift; sourceTree = "<group>"; };
 		9CAF47B271559BFCCF5965DA /* Pods_my_pet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_my_pet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -117,6 +119,7 @@
 		852C0F6823974E3600876B65 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				858C4E93239F2D4200E7CCF1 /* components */,
 				852C0F552397486700876B65 /* LoginView.swift */,
 				852C0F6B2398A06400876B65 /* RegisterView.swift */,
 				852C0F6D2398A08B00876B65 /* HomeView.swift */,
@@ -141,6 +144,14 @@
 				858C4E91239D6B0200E7CCF1 /* UIViewExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		858C4E93239F2D4200E7CCF1 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				858C4E94239F2DA300E7CCF1 /* IconHomeView.swift */,
+			);
+			path = components;
 			sourceTree = "<group>";
 		};
 		AF55518187685BE42ECF99ED /* Pods */ = {
@@ -299,6 +310,7 @@
 				852C0F6C2398A06400876B65 /* RegisterView.swift in Sources */,
 				852C0F702398A10900876B65 /* MyPetsView.swift in Sources */,
 				852C0F782398A23700876B65 /* OwnerPetModel.swift in Sources */,
+				858C4E95239F2DA300E7CCF1 /* IconHomeView.swift in Sources */,
 				852C0F762398A1E700876B65 /* PetModel.swift in Sources */,
 				852C0F522397486700876B65 /* AppDelegate.swift in Sources */,
 				852C0F6E2398A08B00876B65 /* HomeView.swift in Sources */,
