@@ -8,15 +8,18 @@ on:
 
 jobs:
   build:
-
     runs-on: macOS-latest
-
     steps:
     - uses: actions/checkout@master
     - name: Install Pods
       run: pod install
-    - name: xcodebuild clean
-      run: swift test -v
+    - name: clean project
+      run: xcodebuild clean
     - name: build project
       run: xcodebuild build -workspace my-pet.xcworkspace -scheme my-pet -destination "platform=iOS Simulator,OS=13.5,name=iPhone 11"
-
+    - name: Cache pods
+    - uses: actions/cache@master
+      with:
+        path: Pods
+        key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
+        restore-keys: ${{ runner.os }}-pods-
