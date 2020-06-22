@@ -11,10 +11,12 @@ jobs:
     runs-on: macOS-latest
     
     steps:
-    - uses: actions/checkout@master
-    - name: Install Pods
-      run: pod install
     - uses: actions/cache@master
       with:
         path: Pods
         key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
+
+    - uses: actions/checkout@master
+    - name: Install Pods
+      run: pod install
+    
