@@ -13,12 +13,7 @@ jobs:
     - uses: actions/checkout@master
     - name: Install Pods
       run: pod install
-    - name: clean project
-      run: xcodebuild clean
-    - name: build project
-      run: xcodebuild build -workspace my-pet.xcworkspace -scheme my-pet -destination "platform=iOS Simulator,OS=13.5,name=iPhone 11"
     - uses: actions/cache@master
       with:
         path: Pods
         key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
-        restore-keys: ${{ runner.os }}-pods-
